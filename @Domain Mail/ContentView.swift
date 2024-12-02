@@ -1,24 +1,17 @@
-//
-//  ContentView.swift
-//  @Domain Mail
-//
-//  Created by Bozhidar Genchev on 01/12/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding: Bool = false
+    @AppStorage("username") private var username: String = ""
 
-#Preview {
-    ContentView()
+    var body: some View {
+        if hasCompletedOnboarding {
+            MailAppView(username: username)
+        } else {
+            OnboardingView()
+                .onDisappear {
+                    hasCompletedOnboarding = true
+                }
+        }
+    }
 }

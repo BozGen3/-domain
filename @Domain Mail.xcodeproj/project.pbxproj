@@ -14,6 +14,9 @@
 		A74C413B2CFCB510002364FA /* _Domain_MailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C413A2CFCB510002364FA /* _Domain_MailTests.swift */; };
 		A74C41452CFCB510002364FA /* _Domain_MailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C41442CFCB510002364FA /* _Domain_MailUITests.swift */; };
 		A74C41472CFCB510002364FA /* _Domain_MailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C41462CFCB510002364FA /* _Domain_MailUITestsLaunchTests.swift */; };
+		A75B32582CFDD97B00FA6B67 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B32572CFDD97B00FA6B67 /* OnboardingView.swift */; };
+		A75B325A2CFDD99600FA6B67 /* MailAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B32592CFDD99600FA6B67 /* MailAppView.swift */; };
+		A75B325C2CFDDA0000FA6B67 /* ComposeMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B325B2CFDDA0000FA6B67 /* ComposeMailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		A74C41402CFCB510002364FA /* @Domain MailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "@Domain MailUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74C41442CFCB510002364FA /* _Domain_MailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Domain_MailUITests.swift; sourceTree = "<group>"; };
 		A74C41462CFCB510002364FA /* _Domain_MailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Domain_MailUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A75B32572CFDD97B00FA6B67 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A75B32592CFDD99600FA6B67 /* MailAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAppView.swift; sourceTree = "<group>"; };
+		A75B325B2CFDDA0000FA6B67 /* ComposeMailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeMailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,8 @@
 		A74C411C2CFCB50E002364FA = {
 			isa = PBXGroup;
 			children = (
+				A75B325B2CFDDA0000FA6B67 /* ComposeMailView.swift */,
+				A75B32592CFDD99600FA6B67 /* MailAppView.swift */,
 				A74C41272CFCB50E002364FA /* @Domain Mail */,
 				A74C41392CFCB510002364FA /* @Domain MailTests */,
 				A74C41432CFCB510002364FA /* @Domain MailUITests */,
@@ -100,6 +108,7 @@
 				A74C412C2CFCB510002364FA /* Assets.xcassets */,
 				A74C412E2CFCB510002364FA /* _Domain_Mail.entitlements */,
 				A74C412F2CFCB510002364FA /* Preview Content */,
+				A75B32572CFDD97B00FA6B67 /* OnboardingView.swift */,
 			);
 			path = "@Domain Mail";
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75B32582CFDD97B00FA6B67 /* OnboardingView.swift in Sources */,
 				A74C412B2CFCB50E002364FA /* ContentView.swift in Sources */,
 				A74C41292CFCB50E002364FA /* _Domain_MailApp.swift in Sources */,
+				A75B325C2CFDDA0000FA6B67 /* ComposeMailView.swift in Sources */,
+				A75B325A2CFDD99600FA6B67 /* MailAppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
